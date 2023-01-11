@@ -10,6 +10,9 @@ namespace LogicalProblems
             Console.WriteLine("Fibonacci Series");
             FibonacciSeries fibonacciSeries = new FibonacciSeries();
             fibonacciSeries.series();
+            Console.WriteLine("Perfect Number");
+            PerfectNumber perfectNumber = new PerfectNumber();
+            perfectNumber.perfect();
         }
     }
 }
