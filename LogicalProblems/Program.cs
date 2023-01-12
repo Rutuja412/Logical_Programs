@@ -13,9 +13,12 @@ namespace LogicalProblems
             Console.WriteLine("Perfect Number");
             PerfectNumbers perfectNumber = new PerfectNumbers();
             perfectNumber.perfect();
-            Console.WriteLine("Perfect Number");
+            Console.WriteLine("Prime Number");
             PrimeNumbers primeNumbers = new PrimeNumbers();
             primeNumbers.prime();
+            Console.WriteLine("Reverse Number");
+            ReverseNumber reverseNumber = new ReverseNumber();
+            reverseNumber.reverse();
         }
     }
 }
