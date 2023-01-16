@@ -9,7 +9,7 @@ namespace LogicalProblems
            
             Console.WriteLine("Welcome to the logical c-sharp programs");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.ReverseNumber\n5.StopWatchSimulation\n6.Exit ");
+            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.ReverseNumber\n5.StopWatchSimulation\n6.DayWeek\n7.Exit ");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -37,6 +37,11 @@ namespace LogicalProblems
                     Console.WriteLine("StopWatch");
                     StopWatchSimulation stopWatchSimulationstopWatchSimulation = new StopWatchSimulation(); 
                     stopWatchSimulationstopWatchSimulation.stopwatch();
+                    break;
+                    case 6:
+                    Console.WriteLine("Day Of Week");
+                    DayWeek dayWeek = new DayWeek();
+                    dayWeek.week();
                     break;
                 default:
                     Console.WriteLine("Select valid options only ");
