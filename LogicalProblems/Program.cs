@@ -9,7 +9,7 @@ namespace LogicalProblems
            
             Console.WriteLine("Welcome to the logical c-sharp programs");
             Console.WriteLine("Select given options");
-            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.ReverseNumber\n5.StopWatchSimulation\n6.DayWeek\n7.Exit ");
+            Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.ReverseNumber\n5.StopWatchSimulation\n6.DayWeek\n7.TemperatureConversion\n8.Exit ");
             int option = Convert.ToInt16(Console.ReadLine());
             switch (option)
             {
@@ -42,6 +42,14 @@ namespace LogicalProblems
                     Console.WriteLine("Day Of Week");
                     DayWeek dayWeek = new DayWeek();
                     dayWeek.week();
+                    break;
+                    case 7:
+                   Console.Write("\nEnter value for Celcius to Fahrenheit conversion: ");
+                    TemperatureConversion.C = Convert.ToInt32(Console.ReadLine());
+                    TemperatureConversion.temperaturConversionToFahrenheit();
+                    Console.Write("\nEnter value for Fahrenheit to celsius conversion: ");
+                    TemperatureConversion.F = Convert.ToInt32(Console.ReadLine()); ;
+                    TemperatureConversion.temperaturConversionToCelsius();
                     break;
                 default:
                     Console.WriteLine("Select valid options only ");
