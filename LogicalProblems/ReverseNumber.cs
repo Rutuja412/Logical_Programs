@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -19,6 +20,7 @@ namespace LogicalProblems
                 n /= remainder;
             }
             Console.WriteLine("{0} is a reversed number", reverse);
+
         }
     }
     
